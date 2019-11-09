@@ -1,0 +1,5 @@
+---
+filebeat_path: "/opt/filebeat/etc"
+output_conf: {"output":{"logstash":{"enabled":true,"loadbalance":true,"hosts":["{{ logstash_servers }}"],"compression_level":3}}}
+filebeat_conf: {"filebeat.config.inputs":{"reload.enabled":true,"path":"${path.config}/conf.d/*.yml","enabled":true,"reload.period":"5s"}}
+logging_conf: {"logging":{"level":"info","to_files":true,"files":{"path":"${path.config}/logs/","keepfiles":7,"name":"filebeat.log"}}}

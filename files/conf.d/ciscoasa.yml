@@ -1,0 +1,14 @@
+---
+- type: log
+  paths:
+    - /data/ciscoasa/log/ciscoasa.log
+  scan_frequency: 5s
+  fields_under_root: true
+  encoding: utf-8
+  ignore_older: 3h
+  tags: ["Ciscoasa"]
+  fields:
+    t-pot_ip_ext: ${MY_EXTIP}
+    t-pot_ip_int: ${MY_INTIP}
+    t-pot_hostname: ${MY_HOSTNAME}
+    type: Ciscoasa

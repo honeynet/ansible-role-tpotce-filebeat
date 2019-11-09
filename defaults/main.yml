@@ -1,0 +1,18 @@
+---
+logstash_servers: "127.0.0.1:5044"
+honeypot_list:
+  - ciscoasa
+  - adbhoney
+  - conpot
+  - cowrie
+  - dionaea
+  - honeypy
+  - glutton
+  - heralding
+  - mailoney
+  - medpot
+  - p0f
+  - rdpy
+  - suricata
+  - tanner
+  - fatt
