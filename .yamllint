@@ -1,6 +1,6 @@
 extends: default
 ignore: |
-  /vars/main.yml
+  vars/
 
 rules:
   braces:
