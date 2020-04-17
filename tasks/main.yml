@@ -14,4 +14,4 @@
     src: "conf.d/{{ item }}.yml"
     dest: "{{ filebeat_path }}/conf.d/{{ item }}.yml"
   loop: "{{ honeypot_list }}"
-  when: filebeat not in item
+  when: filebeat not in {{ item }}
