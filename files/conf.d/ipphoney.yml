@@ -1,14 +1,14 @@
 ---
 - type: log
   paths:
-    - /data/elasticpot/log/elasticpot.json
+    - /data/ipphoney/log/ipphoney.json
   scan_frequency: 5s
   fields_under_root: true
   encoding: utf-8
   ignore_older: 3h
-  tags: ["ElasticPot"]
+  tags: ["Ipphoney"]
   fields:
     t-pot_ip_ext: ${MY_EXTIP}
     t-pot_ip_int: ${MY_INTIP}
     t-pot_hostname: ${MY_HOSTNAME}
-    type: ElasticPot
+    type: Ipphoney
