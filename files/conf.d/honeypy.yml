@@ -6,7 +6,7 @@
   fields_under_root: true
   encoding: utf-8
   ignore_older: 3h
-  tags: ["Honeypy"]
+  tags: ["honeypy"]
   fields:
     t-pot_ip_ext: ${MY_EXTIP}
     t-pot_ip_int: ${MY_INTIP}
