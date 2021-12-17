@@ -16,3 +16,4 @@ honeypot_list:
   - suricata
   - tanner
   - fatt
+  - log4pot

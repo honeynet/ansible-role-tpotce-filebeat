@@ -1,0 +1,14 @@
+---
+- type: log
+  paths:
+    - /data/log4pot/log/log4pot.log
+  scan_frequency: 5s
+  fields_under_root: true
+  encoding: utf-8
+  ignore_older: 3h
+  tags: ["log4pot"]
+  fields:
+    t-pot_ip_ext: ${MY_EXTIP}
+    t-pot_ip_int: ${MY_INTIP}
+    t-pot_hostname: ${MY_HOSTNAME}
+    type: Log4pot
